@@ -1,0 +1,68 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #333;
+    margin: 20px auto;
+  }
+  
+  .row {
+    display: flex;
+    flex: 1;
+  }
+  
+  .cell {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .white {
+    background-color: #f0d9b5;
+  }
+  
+  .black {
+    background-color: #b58863;
+    cursor: pointer;
+  }
+  
+  .piece {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+/* הוסף לקובץ Board.css */
+.player1 {
+    background-color: #333; /* שחור */
+  }
+  
+  .player2 {
+    background-color: #e0e0e0; /* לבן-אפור */
+    border: 2px solid #333; /* מסגרת שחורה */
+  }
+  
+  /* השאר את הקיים לאחורה תאימות */
+  .player {
+    background-color: #e33;
+  }
+  
+  .opponent {
+    background-color: #333;
+  }
+  
+  .king::after {
+    content: "K";
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .selected {
+    background-color: #7cb07c;
+  }
